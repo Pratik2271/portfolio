@@ -25,6 +25,8 @@
     }
 
     .signature {
+        color: azure;
+        
         text-align: left;
         width: 60%;
         height: 100%;
@@ -60,31 +62,35 @@
         }
     }
 }
-
 @media screen and (max-width: 768px) {
     .top-section {
         flex-direction: column;
+    }
 
-        .intro {
-            text-align: center;
-            border-bottom: 1px solid var(--text-primary);
-            border-right: none;
-            width: auto;
-            padding: 0;
-            padding-bottom: 2rem;
+    .intro {
+        text-align: center;
+        border-bottom: 1px solid var(--text-primary);
+        border-right: none;
+        width: 100%; /* Ensure full width for better alignment */
+        padding: 0;
+        padding-bottom: 2rem;
 
-            h1 {
-                font-size: 5rem;
-            }
-        }
-
-        .signature {
-            height: 30%;
-            padding: 0;
-            padding-top: 2rem;
+        h1 {
+            font-size: 3rem; /* Adjusted font size for smaller screens */
         }
     }
+
+    .signature {
+        height: auto; /* Allow height to adjust based on content */
+        max-height: 30%; /* Set a max-height to prevent it from getting too large */
+        padding: 0;
+        padding-top: 2rem; /* Keep padding to separate from content above */
+        display: flex;
+        justify-content: center; /* Center the signature horizontally */
+        align-items: center; /* Center the signature vertically */
+    }
 }
+
 
 @keyframes drawSignature {
     to {

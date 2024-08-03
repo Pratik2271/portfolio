@@ -11,6 +11,7 @@ import LinkIcon from '@material-ui/icons/Link';
 import WebIcon from '@material-ui/icons/Web';
 import MailIcon from '@material-ui/icons/Mail';
 import Twitter from '@material-ui/icons/Twitter';
+import InstagramIcon from '@material-ui/icons/Instagram'; // Import Instagram icon
 import { ReactComponent as FacebookIcon } from '../assets/icons/facebook.svg';
 import { ReactComponent as GitHubIcon } from '../assets/icons/github.svg';
 import { ReactComponent as LinkedInIcon } from '../assets/icons/linkedin.svg';
@@ -30,7 +31,7 @@ import { ReactComponent as GraphQLIcon } from '../assets/icons/graphql.svg';
 /** Default icons */
 const Icons = {
     email: <MailIcon />,
-    facebook: <SvgIcon component={FacebookIcon} />,
+    instagram: <InstagramIcon />, // Add Instagram icon
     twitter: <Twitter />,
     github: <SvgIcon component={GitHubIcon} stroke="currentColor" strokeWidth={2} style={{ fill: 'none' }} />,
     linkedin: <SvgIcon component={LinkedInIcon} />,
@@ -53,6 +54,5 @@ const Icons = {
     link: <LinkIcon />,
     web: <WebIcon />
 };
-
 
 export { Icons };

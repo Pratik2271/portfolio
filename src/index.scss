@@ -12,7 +12,7 @@
 
 // Variables for dark theme
 .dark-mode {
-    --bg-primary: #2f2f2f;
+    --bg-primary: #050505;
     --text-primary: #ffffff;
     --text-secondary: #e0e0e0;
 }
@@ -67,3 +67,4 @@ a {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--text-secondary);
 }
+

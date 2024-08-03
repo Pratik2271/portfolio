@@ -10,6 +10,7 @@ class Footer extends React.Component {
             <div className="footer">
                 <p>
                     Copyright &copy; {new Date().getFullYear()} All rights reserved
+                    <p>Pratik Shinde</p>
                 </p>
                 <p>
                     {CommonConfig.social.map((socialDetails, index) => {
@@ -24,9 +25,7 @@ class Footer extends React.Component {
                         );
                     })}
                 </p>
-                <p>
-                    <a href="https://github.com/9inpachi/krit" target="_blank" rel="noopener noreferrer">get the code {'</>'}</a>
-                </p>
+               
             </div>
         );
     }
